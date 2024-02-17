@@ -19,7 +19,7 @@ export class TeamDirectoryComponent implements OnInit, OnChanges{
 
   ngOnInit() {
     this.dataService.searchQuery$.subscribe(searchQuery => {
-      this.teamDirectoryData = this.teamDirectorys.filter(({first_name, last_name, email}) => first_name.includes(searchQuery) || last_name.includes(searchQuery) || email.includes(searchQuery));
+      this.teamDirectoryData = this.teamDirectorys.filter(({first_name, last_name, email}) => first_name.toLowerCase().includes(searchQuery.toLowerCase()) || last_name.toLowerCase().includes(searchQuery.toLowerCase()) || email.toLowerCase().includes(searchQuery.toLowerCase()));
     }) 
   }
 
