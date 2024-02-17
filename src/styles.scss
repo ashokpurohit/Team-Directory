@@ -1,8 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
 html, body { height: 100%; }
-body { margin: 0; font-family: "Poppins", sans-serif; background: #f9f9fb; }
+body { margin: 0; background: #f9f9fb; }
 
 h1 {
     color: #868ba2;
@@ -13,6 +18,7 @@ h1 {
     .card {
         display: block;
         top: 0px;
+        width: 100%;
         position: relative;
         border-radius: 15px !important;
         cursor: pointer;
@@ -20,6 +26,7 @@ h1 {
         z-index: 0;
         overflow: hidden;
         border: 1px solid #f2f8f9;
+        font-family: "Poppins", sans-serif !important;
         &:hover {
             top: -4px;
             transition: all 0.2s ease-out;
