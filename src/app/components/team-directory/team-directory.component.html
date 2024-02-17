@@ -1,0 +1,14 @@
+<div class="row px-5 py-3" *ngIf="teamDirectoryData.length">
+    <h1 class="m-0">{{title}}</h1>
+    <div class="content row">
+        <div class="col-sm-6 col-md-4 col-3 p-2" *ngFor="let td of teamDirectoryData">
+            <mat-card class="card">
+                <mat-card-header>
+                    <img mat-card-avatar [src]="td.img">
+                    <mat-card-title>{{td.first_name}} {{td.last_name}}</mat-card-title>
+                    <mat-card-subtitle>{{td.email}}</mat-card-subtitle>
+                </mat-card-header>
+            </mat-card>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="row teamDirectory">
+    <div class="d-flex justify-content-between header px-5 py-3">
+        <h1 class="m-0">Team</h1>
+        <div class="d-flex align-items-center search">
+            <span class="material-symbols-outlined">
+                search
+            </span>
+            <input #searchQuery type="text" (input)="onSearchUpdated(searchQuery.value)" placeholder="Search" />
+        </div>
+    </div>
+    <app-team-directory title="Administrators" [teamDirectorys]="adminTeamDirectorys"></app-team-directory>
+    <app-team-directory title="Members" [teamDirectorys]="memberTeamDirectorys"></app-team-directory>
+</div>

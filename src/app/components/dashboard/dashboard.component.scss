@@ -1,0 +1,19 @@
+.teamDirectory {
+    .header {
+        background: #84a3f6;
+        height: 4rem;
+        h1 { color: white;}
+        .search{
+            background: white;
+            color: black;
+            border-radius: 50px;
+            padding: 1px 18px;
+            width: 30%;
+            input{
+                width: 100%;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+}
